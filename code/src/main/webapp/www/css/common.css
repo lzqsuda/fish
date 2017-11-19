@@ -1,0 +1,53 @@
+/*按钮样式、正常*/
+
+.game-content{
+    float: left;
+	border: 1px solid #dcdcdc;
+}
+
+.game-content-wh{
+	width: 400px;
+	height: 760px;
+}
+
+.game-title{
+	width: 398px;
+	height: 60px;
+	text-align: center;	
+	background: #D36052;
+}
+
+.text-title{
+	font-size: 20px;
+	color: #dcdcdc;
+	line-height: 60px;
+}
+
+.game-button{
+    display: inline-block;
+    text-align: center;
+    margin:0 auto;
+    background:    #db6a5d;
+    color: #FFFFFF;
+    margin: 10px;
+}
+
+.game-button:hover{
+    text-align: center;
+    margin:0 auto;
+    background:#d6584a;
+    margin: 10px;
+}
+
+.game-button-small{
+    width:90px;
+    height:26px;
+    line-height: 26px;
+    border-radius:13px;    
+}
+.game-button-normal{
+    width:120px;
+    height:36px;
+    line-height: 36px;
+    border-radius:18px;
+}

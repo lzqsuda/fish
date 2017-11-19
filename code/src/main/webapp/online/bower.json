@@ -1,0 +1,19 @@
+{
+  "name": "itaf",
+  "version": "1.0",
+  "homepage": "https://github.com/lzqsuda/itaf",
+  "authors": [
+    "lzqsuda <lzq_suda@126.com>"
+  ],
+  "description": "itaf",
+  "main": "1",
+  "moduleType": [],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}

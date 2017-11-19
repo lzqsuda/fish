@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE sqlMap PUBLIC "-//iBATIS.com//DTD SQL Map 2.0//EN" "http://ibatis.apache.org/dtd/sql-map-2.dtd">
+<sqlMap namespace="Competition">
+
+	<typeAlias alias="Competition" type="itaf.fish.entity.Competition"/>
+	<!--查询列名-->
+	<sql id="selectColumn">
+         code as code , name as name , start_time as startTime , end_time as endTime , enroll_start_time as enrollStartTime , enroll_end_time as enrollEndTime , address as address , status as status , all_num as allNum , enroll_num as enrollNum , contact_mobile as contactMobile , contact_name as contactName , nreward_amout_list as nrewardAmoutList , sreward_memberno_list as srewardMembernoList , sreward_amount_list as srewardAmountList , eqcoed_num as eqcoedNum , note as note , id as id , version as version , is_remove as isRemove , create_time as createTime , update_time as updateTime , create_by as createBy , update_by as updateBy  
+    </sql>
+    
+	<!-- select  主键查询基本语句 -->
+	<select id="findOne" parameterClass="java.lang.String" resultClass="Competition">
+			select 
+		 		<include refid="selectColumn" />
+			from TB1002 where 
+		 		id = #id# and is_remove='0'
+	</select>
+
+	<!-- select  动态查询-->
+	<select id="findList" parameterClass="Competition" resultClass="Competition">
+			select 
+		 		<include refid="selectColumn" />
+			from TB1002 where is_remove='0'
+		 	<dynamic>
+   					<isNotNull prepend=" and " property="code">code = #code# </isNotNull>
+   					<isNotNull prepend=" and " property="name">name = #name# </isNotNull>
+   					<isNotNull prepend=" and " property="startTime">start_time = #startTime# </isNotNull>
+   					<isNotNull prepend=" and " property="endTime">end_time = #endTime# </isNotNull>
+   					<isNotNull prepend=" and " property="enrollStartTime">enroll_start_time = #enrollStartTime# </isNotNull>
+   					<isNotNull prepend=" and " property="enrollEndTime">enroll_end_time = #enrollEndTime# </isNotNull>
+   					<isNotNull prepend=" and " property="address">address = #address# </isNotNull>
+   					<isNotNull prepend=" and " property="status">status = #status# </isNotNull>
+   					<isNotNull prepend=" and " property="allNum">all_num = #allNum# </isNotNull>
+   					<isNotNull prepend=" and " property="enrollNum">enroll_num = #enrollNum# </isNotNull>
+   					<isNotNull prepend=" and " property="contactMobile">contact_mobile = #contactMobile# </isNotNull>
+   					<isNotNull prepend=" and " property="contactName">contact_name = #contactName# </isNotNull>
+   					<isNotNull prepend=" and " property="nrewardAmoutList">nreward_amout_list = #nrewardAmoutList# </isNotNull>
+   					<isNotNull prepend=" and " property="srewardMembernoList">sreward_memberno_list = #srewardMembernoList# </isNotNull>
+   					<isNotNull prepend=" and " property="srewardAmountList">sreward_amount_list = #srewardAmountList# </isNotNull>
+   					<isNotNull prepend=" and " property="eqcoedNum">eqcoed_num = #eqcoedNum# </isNotNull>
+   					<isNotNull prepend=" and " property="note">note = #note# </isNotNull>
+   					<isNotNull prepend=" and " property="id">id = #id# </isNotNull>
+   					<isNotNull prepend=" and " property="version">version = #version# </isNotNull>
+   					<isNotNull prepend=" and " property="isRemove">is_remove = #isRemove# </isNotNull>
+   					<isNotNull prepend=" and " property="createTime">create_time = #createTime# </isNotNull>
+   					<isNotNull prepend=" and " property="updateTime">update_time = #updateTime# </isNotNull>
+   					<isNotNull prepend=" and " property="createBy">create_by = #createBy# </isNotNull>
+   					<isNotNull prepend=" and " property="updateBy">update_by = #updateBy# </isNotNull>
+  			 </dynamic>
+	</select>
+
+  
+  
+	<!-- isnew  判断纪录是否存在-->
+	<select id="isnew" parameterClass="java.lang.String" resultClass="java.lang.Integer">
+		<![CDATA[
+			select 
+		 		count(1)
+			from TB1002 where 
+		 		id = #id# and is_remove='0'
+		]]>	  
+	</select>
+	
+	<!-- delete 逻辑删除基本语句 -->
+	<update id="delete" parameterClass="Competition">
+		<![CDATA[
+			update TB1002
+			set is_remove=#isRemove#,
+			update_time=#updateTime#,
+			update_by=#updateBy#
+			where id=#id# and is_remove='0'
+		]]>	 
+	</update>
+	
+	<!--insert 插入基本语句-->
+	<insert id="insert" parameterClass="Competition">
+		insert into  TB1002
+			( code  , name  , start_time  , end_time  , enroll_start_time  , enroll_end_time  , address  , status  , all_num  , enroll_num  , contact_mobile  , contact_name  , nreward_amout_list  , sreward_memberno_list  , sreward_amount_list  , eqcoed_num  , note  , id  , version  , is_remove  , create_time  , update_time  , create_by  , update_by  )
+		values
+			(
+   					#code# ,
+   					#name# ,
+   					#startTime# ,
+   					#endTime# ,
+   					#enrollStartTime# ,
+   					#enrollEndTime# ,
+   					#address# ,
+   					#status# ,
+   					#allNum# ,
+   					#enrollNum# ,
+   					#contactMobile# ,
+   					#contactName# ,
+   					#nrewardAmoutList# ,
+   					#srewardMembernoList# ,
+   					#srewardAmountList# ,
+   					#eqcoedNum# ,
+   					#note# ,
+   					#id# ,
+   					#version# ,
+   					#isRemove# ,
+   					#createTime# ,
+   					#updateTime# ,
+   					#createBy# ,
+   					#updateBy# 
+			)
+	</insert>
+	
+	<!--update 更新基本语句-->
+	<update id="update" parameterClass="Competition">
+			update TB1002 set id=#id#
+				<dynamic>
+   					<isNotNull prepend="," property="code">code = #code# </isNotNull>
+   					<isNotNull prepend="," property="name">name = #name# </isNotNull>
+   					<isNotNull prepend="," property="startTime">start_time = #startTime# </isNotNull>
+   					<isNotNull prepend="," property="endTime">end_time = #endTime# </isNotNull>
+   					<isNotNull prepend="," property="enrollStartTime">enroll_start_time = #enrollStartTime# </isNotNull>
+   					<isNotNull prepend="," property="enrollEndTime">enroll_end_time = #enrollEndTime# </isNotNull>
+   					<isNotNull prepend="," property="address">address = #address# </isNotNull>
+   					<isNotNull prepend="," property="status">status = #status# </isNotNull>
+   					<isNotNull prepend="," property="allNum">all_num = #allNum# </isNotNull>
+   					<isNotNull prepend="," property="enrollNum">enroll_num = #enrollNum# </isNotNull>
+   					<isNotNull prepend="," property="contactMobile">contact_mobile = #contactMobile# </isNotNull>
+   					<isNotNull prepend="," property="contactName">contact_name = #contactName# </isNotNull>
+   					<isNotNull prepend="," property="nrewardAmoutList">nreward_amout_list = #nrewardAmoutList# </isNotNull>
+   					<isNotNull prepend="," property="srewardMembernoList">sreward_memberno_list = #srewardMembernoList# </isNotNull>
+   					<isNotNull prepend="," property="srewardAmountList">sreward_amount_list = #srewardAmountList# </isNotNull>
+   					<isNotNull prepend="," property="eqcoedNum">eqcoed_num = #eqcoedNum# </isNotNull>
+   					<isNotNull prepend="," property="note">note = #note# </isNotNull>
+   					<isNotNull prepend="," property="id">id = #id# </isNotNull>
+   					<isNotNull prepend="," property="version">version = #version# </isNotNull>
+   					<isNotNull prepend="," property="isRemove">is_remove = #isRemove# </isNotNull>
+   					<isNotNull prepend="," property="createTime">create_time = #createTime# </isNotNull>
+   					<isNotNull prepend="," property="updateTime">update_time = #updateTime# </isNotNull>
+   					<isNotNull prepend="," property="createBy">create_by = #createBy# </isNotNull>
+   					<isNotNull prepend="," property="updateBy">update_by = #updateBy# </isNotNull>
+  			 </dynamic>
+			where  id=#id# and is_remove='0'
+	</update>
+</sqlMap>

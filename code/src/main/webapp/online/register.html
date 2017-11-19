@@ -1,0 +1,143 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>用户注册 - 权健－办公</title>
+    <link href="asset/css/register.css" rel="stylesheet" type="text/css" />
+    <link href="asset/css/pic.css" rel="stylesheet" type="text/css" />
+    <link href="asset/css/style.css" rel="stylesheet" type="text/css" id="styles" />
+    <link href="asset/css/form.css" rel="stylesheet" type="text/css" id="styles" />
+    <script>
+    function login() {
+        window.location.href = "index.html";
+    }
+    </script>
+</head>
+
+<body>
+    <script src="lib/jquery-1.8.3.min.js"></script>
+    <script src="lib/jquery.luara.0.0.1.min.js"></script>
+    <!--附加内容区开始
+  <div class="ts_box1" id="loading_box">
+     <div class="icon_loading">正在验证您的登录信息！</div>
+  </div>
+  
+  <div class="ts_box1" id="ok_box">
+     <div class="icon_ok">验证通过，现在进入网银系统！</div>
+  </div>
+  
+  <div class="ts_box2" id="error_box">
+     <div class="icon_error">这里是错误信息，文字内容一般情况文字内容是一行，超过一行自动分行。</div>
+   <div class="loading_btn_box">
+     <input class="btn_1" name="" type="button" value="确  认"  onclick="errorTs2()"/>
+   </div>
+  </div>-->
+    <div class="cover_box" id="cover_box"></div>
+    <!--附加内容区结束-->
+    <div class="page_top_box">
+        <div class="line"></div>
+        <div class="login_top">
+            <div class="login_logo"></div>
+            <div class="login_top_link">
+                <a href="#">功能演示</a>
+                <!--<a href="#">网银助手下载</a>-->
+                <a href="#">常见问题</a>
+                <a href="#">在线注册</a>
+            </div>
+        </div>
+    </div>
+    <div class="page_center_box_register">
+        <div class="page_box">
+            <!-- 步骤栏开始-->
+            <div class="step_box">
+                <span>用户注册</span>
+            </div>
+            <!-- 步骤栏结束-->
+            <!-- 付款账号栏开始-->
+            <div class="round_box w_230 m_left_20">
+                <div class="tt_box">
+                    <div class="tt">基本信息</div>
+                </div>
+                <div class="lib_box lib_tt">姓名：</div>
+                <div class="lib_box lib_conter w_100p">
+                    <input name="" type="text" class="ipt_1 w_98p" />
+                </div>
+                <div class="lib_box lib_tt">昵称：</div>
+                <div class="lib_box lib_conter w_100p">
+                    <input name="" type="text" class="ipt_1 w_98p" />
+                </div>
+                <div class="lib_box lib_tt">身份证号码：</div>
+                <div class="lib_box lib_conter w_100p">
+                    <input name="" type="text" class="ipt_1 w_98p" />
+                </div>
+                <div class="lib_box lib_tt">登录密码：</div>
+                <div class="lib_box lib_conter w_100p">
+                    <input name="" type="password" class="ipt_1 w_98p" />
+                </div>
+            </div>
+            <!-- 收款账号栏开始-->
+            <div class="round_box w_230 m_left_60">
+                <div class="tt_box">
+                    <div class="tt">权健信息</div>
+                </div>
+                <div class="lib_box lib_tt">推荐人：</div>
+                <div class="lib_box lib_conter w_100p">
+                    <input name="" type="text" class="ipt_1 w_98p" />
+                </div>
+                <div class="lib_box lib_tt">推荐编号：</div>
+                <div class="lib_box lib_conter w_100p">
+                    <input name="" type="text" class="ipt_1 w_98p" />
+                </div>
+                <div class="lib_box lib_tt">安置人：</div>
+                <div class="lib_box lib_conter w_100p">
+                    <input name="" type="text" class="ipt_1 w_98p" />
+                </div>
+                <div class="lib_box lib_tt">安置编号：</div>
+                <div class="lib_box lib_conter w_100p">
+                    <input name="" type="text" class="ipt_1 w_98p" />
+                </div>
+            </div>
+            <!-- 转账信息栏开始-->
+            <div class="round_box w_230 m_left_60">
+                <div class="tt_box">
+                    <div class="tt">联系信息</div>
+                </div>
+                <div class="lib_box lib_tt">手机号码：</div>
+                <div class="lib_box lib_conter w_100p">
+                    <input name="" type="text" class="ipt_1 w_98p" />
+                </div>
+                <div class="lib_box lib_tt">注册地址：</div>
+                <div class="lib_box lib_conter w_100p">
+                    <input name="" type="text" class="ipt_1 w_98p" />
+                </div>
+                <div class="lib_box lib_tt">电子邮箱：</div>
+                <div class="lib_box lib_conter w_100p">
+                    <input name="" type="text" class="ipt_1 w_98p" />
+                </div>
+                <div class="lib_box lib_tt">微信号：</div>
+                <div class="lib_box lib_conter w_100p">
+                    <input name="" type="text" class="ipt_1 w_98p" />
+                </div>
+            </div>
+            <div class="round_box w_100p">
+                <div class="btn_box">
+                    <input name="" type="button" value="重  置" class="btn2" />
+                    <input name="" type="button" value="提  交" class="btn2" onclick="window.location='login.html';" />
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+    <div class="page_bottom_box">
+        <div class="cpe_box"></div>
+        <div class="copyright_box">
+            <a href="#">关于权健</a>
+            <a href="#">诚征英才</a>
+            <a href="#">联系我们</a>
+            <a href="#">服务协议</a>
+            <a href="#">International Business</a>
+            <br/> Copyright &copy; 2014-2015 Webank. All Rights Reserved. 权健股份有限公司 粤ICP备14074715号-1
+        </div>
+        <!--<div class="zs_box"></div>-->
+    </div>

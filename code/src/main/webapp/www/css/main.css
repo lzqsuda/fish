@@ -1,0 +1,291 @@
+@CHARSET "UTF-8";
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+body{
+    width: 100%;
+    height: 100%;
+    font-size: 12px; 
+    font-family:'Microsoft YaHei','Times New Roman','华文细黑','宋体','Source Sans Pro','Helvetica Neue',Helvetica,Arial,sans-serif;
+    background:#fafafa;
+    -moz-user-select: none; 
+    -webkit-user-select: none; 
+    -ms-user-select: none; 
+    -khtml-user-select: none; 
+    user-select: none; 
+}
+
+.main-content{
+    float: left;
+	border: 1px solid #dcdcdc;
+}
+
+.main-content-wh{
+	width: 300px;
+	min-height: 400px;
+}
+
+.main-title{
+	width: 298px;
+	height: 60px;
+	text-align: center;	
+	background: #D36052;
+}
+
+.text-title{
+	font-size: 20px;
+	color: #dcdcdc;
+	line-height: 60px;
+}
+
+.main-row{
+	float: left;
+	width: 298px;
+	height: 60px;
+}
+.main-span{
+	float: left;
+	width: 100px;
+	height: 58px;	
+	line-height: 58px;
+}
+.main-span-style{
+	float: right;
+	font-size: 16px
+}
+
+#awardInfo{
+	font-size: 20px;
+	margin-left: 50px;
+	width:200px; 
+	height:100px; 
+	border:0;
+	disabled: none;
+};
+
+.ul-game-list{
+    width:998px;
+    
+}
+.li-game-list-nav{
+	list-style-type:none; 
+    width:998px;
+    height:30px;
+    border-radius:5px;
+    margin-bottom:8px;
+}
+
+.li-game-list-nav a{
+    display:block;
+    float:left;
+    height:30px;
+    line-height:30px;
+}
+
+.li-game-list-nav .cut-apart-line{
+    width: 1px;
+    height: 15px;
+    display: block;
+    float: right;
+    background: #000000;
+    margin-top: 9px
+}
+.li-game-list-nav a p{
+    float:left;
+    color:#000000;
+    margin-left: 30%;
+}
+
+.li-game-list-nav-game-id{
+    width:70px;
+    border-radius: 5px 0 0 0;
+}
+
+.li-game-list-nav-game-name{
+    width:100px;	
+    border-radius: 5px 0 0 0;		
+}
+.li-game-list-nav-game-name p{
+    margin-left: 15px!important;
+}
+
+.li-game-list-nav-game-content{
+    width:100px;
+}
+.li-game-list-nav-game-content p{
+    margin-left: 15px!important;
+}
+
+.li-game-list-nav-game-begin-date{
+    width:100px;
+}
+
+.li-game-list-nav-game-end-date{
+    width:100px;
+}
+
+.li-game-list-nav-game-begin-date p, .li-game-list-nav-game-end-date p{
+    margin-left: 17%!important;
+}
+
+.li-game-list-nav-game-address{
+    width:425px;	
+}
+.li-game-list-nav-game-address p{
+    margin-left: 15px!important;
+}
+
+/*参赛总人数*/
+.li-game-list-nav-game-all-num{
+    width:100px;	
+}
+.li-game-list-nav-game-all-num p{
+    margin-left: 15px!important;
+}
+
+.li-game-list-nav-game-reward-amout{
+    width:100px;	
+    border-radius: 0 5px 0 0;	
+}
+.li-game-list-nav-game-reward-amout p{
+    margin-left: 15px!important;	
+}
+
+.li-game-list-nav-game-status{
+    width:70px;	
+    border-radius: 0 5px 0 0;	
+}
+.li-game-list-nav-game-status p{
+    margin-left: 15px!important;
+}
+
+/*病例列表表头、*/
+.li-game-list-nav-normal{
+    color: #ffffff;
+    background-color: #d36052 !important;
+}
+.li-game-list-nav-normal:hover{
+    background-color: #b44c40 !important;
+}
+
+
+.li-game-list-member-context{
+	list-style-type:none; 
+    width:998px;
+    height:30px;
+    border-radius:5px;
+    margin-bottom:8px;
+}
+
+.li-game-list-member-context a{
+    display:block;
+    float:left;
+    height:30px;
+    line-height:30px;
+}
+
+.li-game-list-member-join-context{
+	list-style-type:none; 
+    width:998px;
+    height:30px;
+    border-radius:5px;
+    margin-bottom:8px;	
+}
+
+.li-game-list-member-join-context a{
+    display:block;
+    float:left;
+    height:30px;
+    line-height:30px;	
+}
+
+.li-game-list-member-can-join-context{
+	list-style-type:none; 
+    width:998px;
+    height:30px;
+    border-radius:5px;
+    margin-bottom:8px;	
+}
+
+.li-game-list-member-can-join-context a{
+    display:block;
+    float:left;
+    height:30px;
+    line-height:30px;	
+}
+
+
+.li-game-list-member-game-id{
+    width:70px;
+}
+
+.li-game-list-member-game-name{
+    width:100px;
+	border-bottom: 1px solid #ff0000;
+}
+.li-game-list-member-game-name p{
+	margin-left: 15px!important;
+}
+
+.li-game-list-member-game-start-time{
+    width:100px;
+	border-bottom: 1px solid #ff0000;	
+}
+.li-game-list-member-game-start-time p{
+    margin-left: 15px!important;
+}
+
+.li-game-list-member-game-end-time{
+    width:100px;
+	border-bottom: 1px solid #ff0000;	
+}
+.li-game-list-member-game-end-time p{
+    margin-left: 15px!important;
+}
+
+.li-game-list-member-game-address{
+    width:425px;
+	border-bottom: 1px solid #ff0000;	
+}
+.li-game-list-member-game-address p{
+	margin-left: 15px!important;
+}
+
+.li-game-list-member-game-all-num{
+    width:100px;
+	border-bottom: 1px solid #ff0000;	
+}
+.li-game-list-member-game-all-num p{
+	margin-left: 15px!important;	
+}
+
+.li-game-list-member-game-reward-amout{
+    width:100px;
+	border-bottom: 1px solid #ff0000;	
+}
+.li-game-list-member-game-reward-amout p{
+	margin-left: 15px!important;	
+}
+
+.li-game-list-member-game-status{
+    width:70px;	
+	border-bottom: 1px solid #ff0000;	
+}
+.li-game-list-member-game-status p{
+	margin-left: 15px!important;
+}
+
+.space{
+	margin-top: 20px;
+    width:298px;
+	height: 30px;
+}
+
+.space span{
+	font-size: 14px;
+	font-weight: bold;
+	line-height: 30px;
+}
+

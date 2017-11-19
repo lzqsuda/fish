@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE sqlMap PUBLIC "-//iBATIS.com//DTD SQL Map 2.0//EN" "http://ibatis.apache.org/dtd/sql-map-2.dtd">
+<sqlMap namespace="User">
+
+	<typeAlias alias="User" type="itaf.fish.entity.User"/>
+	<!--查询列名-->
+	<sql id="selectColumn">
+         employee_no as employeeNo , password as password , email as email , name as name , department as department , id as id , version as version , is_remove as isRemove , create_time as createTime , update_time as updateTime , create_by as createBy , update_by as updateBy  
+    </sql>
+    
+	<!-- select  主键查询基本语句 -->
+	<select id="findOne" parameterClass="java.lang.String" resultClass="User">
+			select 
+		 		<include refid="selectColumn" />
+			from TB9101 where 
+		 		id = #id# and is_remove='0'
+	</select>
+
+	<!-- select  动态查询-->
+	<select id="findList" parameterClass="User" resultClass="User">
+			select 
+		 		<include refid="selectColumn" />
+			from TB9101 where is_remove='0'
+		 	<dynamic>
+   					<isNotNull prepend=" and " property="employeeNo">employee_no = #employeeNo# </isNotNull>
+   					<isNotNull prepend=" and " property="password">password = #password# </isNotNull>
+   					<isNotNull prepend=" and " property="email">email = #email# </isNotNull>
+   					<isNotNull prepend=" and " property="name">name = #name# </isNotNull>
+   					<isNotNull prepend=" and " property="department">department = #department# </isNotNull>
+   					<isNotNull prepend=" and " property="id">id = #id# </isNotNull>
+   					<isNotNull prepend=" and " property="version">version = #version# </isNotNull>
+   					<isNotNull prepend=" and " property="isRemove">is_remove = #isRemove# </isNotNull>
+   					<isNotNull prepend=" and " property="createTime">create_time = #createTime# </isNotNull>
+   					<isNotNull prepend=" and " property="updateTime">update_time = #updateTime# </isNotNull>
+   					<isNotNull prepend=" and " property="createBy">create_by = #createBy# </isNotNull>
+   					<isNotNull prepend=" and " property="updateBy">update_by = #updateBy# </isNotNull>
+  			 </dynamic>
+	</select>
+
+  
+  
+	<!-- isnew  判断纪录是否存在-->
+	<select id="isnew" parameterClass="java.lang.String" resultClass="java.lang.Integer">
+		<![CDATA[
+			select 
+		 		count(1)
+			from TB9101 where 
+		 		id = #id# and is_remove='0'
+		]]>	  
+	</select>
+	
+	<!-- delete 逻辑删除基本语句 -->
+	<update id="delete" parameterClass="User">
+		<![CDATA[
+			update TB9101
+			set is_remove=#isRemove#,
+			update_time=#updateTime#,
+			update_by=#updateBy#
+			where id=#id# and is_remove='0'
+		]]>	 
+	</update>
+	
+	<!--insert 插入基本语句-->
+	<insert id="insert" parameterClass="User">
+		insert into  TB9101
+			( employee_no  , password  , email  , name  , department  , id  , version  , is_remove  , create_time  , update_time  , create_by  , update_by  )
+		values
+			(
+   					#employeeNo# ,
+   					#password# ,
+   					#email# ,
+   					#name# ,
+   					#department# ,
+   					#id# ,
+   					#version# ,
+   					#isRemove# ,
+   					#createTime# ,
+   					#updateTime# ,
+   					#createBy# ,
+   					#updateBy# 
+			)
+	</insert>
+	
+	<!--update 更新基本语句-->
+	<update id="update" parameterClass="User">
+			update TB9101 set id=#id#
+				<dynamic>
+   					<isNotNull prepend="," property="employeeNo">employee_no = #employeeNo# </isNotNull>
+   					<isNotNull prepend="," property="password">password = #password# </isNotNull>
+   					<isNotNull prepend="," property="email">email = #email# </isNotNull>
+   					<isNotNull prepend="," property="name">name = #name# </isNotNull>
+   					<isNotNull prepend="," property="department">department = #department# </isNotNull>
+   					<isNotNull prepend="," property="id">id = #id# </isNotNull>
+   					<isNotNull prepend="," property="version">version = #version# </isNotNull>
+   					<isNotNull prepend="," property="isRemove">is_remove = #isRemove# </isNotNull>
+   					<isNotNull prepend="," property="createTime">create_time = #createTime# </isNotNull>
+   					<isNotNull prepend="," property="updateTime">update_time = #updateTime# </isNotNull>
+   					<isNotNull prepend="," property="createBy">create_by = #createBy# </isNotNull>
+   					<isNotNull prepend="," property="updateBy">update_by = #updateBy# </isNotNull>
+  			 </dynamic>
+			where  id=#id# and is_remove='0'
+	</update>
+</sqlMap>

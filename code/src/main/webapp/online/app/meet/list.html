@@ -1,0 +1,175 @@
+<div class="page_box" >
+    <!--温馨提示弹层-->
+    <div class="float_box1" id="float_box1">
+        <div class="line_box">
+            <div class="arrow_box"></div>
+            <div class="text_box">
+                <p>1、审核员的级别不同，交易审核的权限不同，每个审核员只能看到自己审核级别范围内的业务，审核员不能审核自己的制单，审核人员的级别由管理员或银行代管设定；</p>
+                <p>2、支持同时审核多笔交易；</p>
+                <p>3、若选择审核拒绝，必须输入拒绝原因。</p>
+            </div>
+        </div>
+    </div>
+    <!--功能介绍弹层-->
+    <div class="float_box2" id="float_box2">
+        <div class="line_box">
+            <div class="arrow_box"></div>
+            <div class="text_box">
+                <span class="tt">【 交易授权 】</span>
+                <br /> 您可通过该功能审核代办业务。
+            </div>
+        </div>
+    </div>
+    <!-- 地址栏开始-->
+    <div class="add_box">
+        <div class="tt">会议中心 - 会议查询</div>
+        <div class="link"><a href="#" onmouseover="opents1()" onmouseout="closets1()">温馨提示</a><a href="#" onmouseover="opents2()" onmouseout="closets2()">功能介绍</a></div>
+    </div>
+    <!-- 地址栏结束-->
+    <!-- 活期存款户-->
+    <div class="round_box w_100p">
+        <div class="tt_box">
+            <div class="tt">会议查询</div>
+        </div>
+        <div class="round_box w_100p">
+            <div class="lib_box lib_tt">会议编号：</div>
+            <div class="lib_box lib_conter">
+                <input type="text" class="ipt_1 ipt_w75" />
+            </div>
+            <div class="lib_box lib_tt">会议状态：</div>
+            <div class="lib_box lib_conter">
+                <select class="ipt_1 ipt_w75">
+                    <option>全部</option>
+                    <option>已锁定</option>
+                    <option>已开放</option>
+                    <option>已过期</option>
+                </select>
+            </div>
+            <div class="lib_box lib_tt">起止日期：</div>
+            <div class="lib_box lib_conter">
+                <input name="starttime" id="starttime" type="text" onClick="WdatePicker()" class=" ipt_1 ipt_w75" />
+                <span class="jg">&nbsp;-&nbsp;</span>
+                <input name="stoptime" id="stoptime" type="text" onClick="WdatePicker()" class=" ipt_1 ipt_w75" />
+            </div>
+            <div class="lib_box lib_bz">
+                <input name="" type="button" value="查询" class="btn3 " ng-click="vm.query()" />
+            </div>
+        </div>
+        <div class="heig10"></div>
+        <div class="round_box w_100p">
+            <div class="tt_box">
+                <div class="tt">查询结果</div>
+            </div>
+            <table class="table3" align="center">
+                <tr class="tt">
+                    <!-- th 加粗，居中-->
+                    <td class="cen">会议编号</td>
+                    <td class="cen">会议名称</td>
+                    <td class="cen">会议状态</td>
+                    <td class="cen">会议安排</td>
+                    <td class="cen">已参加人数</td>
+                    <td class="cen">创建时间</td>
+                    <td class="cen">操作</td>
+                    <!--<td class="cen" style="width:15%"></td>-->
+                </tr>
+                <tr class="backrow" ng-repeat="item in vm.data">
+                    <td class="cen">{{item.no}}</td>
+                    <td class="cen">{{item.name}}</td>
+                    <td class="cen">{{item.status}}</td>
+                    <td class="cen">{{item.orderInfo}}</td>
+                    <td class="cen">{{item.num}}</td>
+                    <td class="cen">{{item.createTime}}</td>
+                    <td class="cen"><a href="#/meet/add.do">参加会议</a><a class="delete1" href="#">退出会议</a></td>
+                </tr>
+                
+            </table>
+            <div class="page add_box">
+                <div class="link"><a href="#">首页</a> <a href="#">上一页</a> <a href="#">下一页</a> <a href="#">尾页</a> 1/8</div>
+            </div>
+        </div>
+    </div>
+</div>
+<script language="javascript">
+$("#agree").click(function() {
+    if ($(this).is(":checked")) {
+        $("#disagree").attr("checked", false);
+        $(".agreeclass").attr("checked", true);
+        $(".disagreeclass").attr("checked", false);
+        $(".disagreetext").hide();
+    } else {
+        $(".agreeclass").attr("checked", false);
+    }
+});
+$("#disagree").click(function() {
+    if ($(this).is(":checked")) {
+        $("#agree").attr("checked", false);
+        $(".agreeclass").attr("checked", false);
+        $(".disagreeclass").attr("checked", true);
+        $(".disagreetext").show();
+    } else {
+        $(".disagreeclass").attr("checked", false);
+        $(".disagreetext").hide();
+    }
+
+});
+$(".agreeclass").click(function() {
+    var l1 = $(".agreeclass:checked").size();
+    var l2 = $(".agreeclass").size();
+    if (l1 == l2) {
+        $("#agree").attr("checked", true);
+    } else {
+        $("#agree").attr("checked", false);
+    }
+    if ($(this).is(":checked")) {
+        $(this).parent().parent().find(".disagreeclass").attr("checked", false);
+    }
+
+    var l3 = $(".disagreeclass:checked").size();
+    var l4 = $(".disagreeclass").size();
+    if (l3 == l2) {
+        $("#disagree").attr("checked", true);
+    } else {
+        $("#disagree").attr("checked", false);
+    }
+
+    $(this).parent().parent().find(".disagreetext").hide();
+
+});
+
+$(".disagreeclass").click(function() {
+    var l1 = $(".disagreeclass:checked").size();
+    var l2 = $(".disagreeclass").size();
+    if (l1 == l2) {
+        $("#disagree").attr("checked", true);
+    } else {
+        $("#disagree").attr("checked", false);
+    }
+    if ($(this).is(":checked")) {
+        $(this).parent().parent().find(".disagreetext").show();
+        $(this).parent().parent().find(".agreeclass").attr("checked", false);
+    } else {
+        $(this).parent().parent().find(".disagreetext").hide();
+    }
+
+    var l3 = $(".agreeclass:checked").size();
+    var l4 = $(".agreeclass").size();
+    if (l3 == l2) {
+        $("#agree").attr("checked", true);
+    } else {
+        $("#agree").attr("checked", false);
+    }
+});
+$(".disagreetext").bind("click", function() {
+    $(this).val("");
+});
+
+
+$(function() {
+    $(".delete1").click(function() {
+        var con = confirm("您确定您要撤销您所选择的记录吗？");
+        /*if (con == true) {
+	 		$(this).closest("tr").remove();
+		}*/
+    });
+});
+</script>

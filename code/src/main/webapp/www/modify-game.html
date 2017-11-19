@@ -1,0 +1,831 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>黑坑游戏 | 登录页面</title>
+<script type="text/javascript" src="./js/common/jquery-1.8.0.js"></script>
+<link rel="stylesheet" type="text/css" href="./css/common.css" />
+<link rel="stylesheet" type="text/css" href="./css/modify-game.css" />
+</head>
+<body>
+	<input id="game-code" type="hidden" value="">
+	<div class="create-game-content create-game-content-wh">
+		<div class="game-title">
+			<label class="text-title">修改游戏</label>
+		</div>
+		<div class="create-game-row" style="margin-top: 30px;">
+			<div class="create-game-span">
+				<span class="create-game-span-style">竟赛编号：</span>
+			</div>
+			<div class="create-game-input">
+				<input id="game-id" type="text" disabled="true"></input>
+			</div>
+		</div>
+		<div class="create-game-row">
+			<div class="create-game-span">
+				<span class="create-game-span-style">名称：</span>
+			</div>
+			<div class="create-game-input" style="float: left;">
+				<input id="game-name" type="text"></input>
+			</div>
+		</div>
+
+		<div class="create-game-row">
+			<div class="create-game-span">
+				<span class="create-game-span-style">开始时间：</span>
+			</div>
+			<div class="create-game-date" style="float: left; margin-left: 8px; width: 55px;">
+				<select id="game-start-year" name=""> 
+					<option value="----">----</option> 					
+					<option value="2017">2017</option> 
+					<option value="2018">2018</option> 					
+					<option value="2019">2019</option> 
+				</select>
+			</div>
+			<div class="create-game-date-space">
+				<span style="margin-left: 3px;">
+					年
+				</span>
+			</div>
+			<div class="game-game-date" style="float: left; width: 40px;">
+				<select id="game-start-month" name=""> 
+					<option value="--">--</option> 					
+					<option value="01">01</option> 
+					<option value="02">02</option> 					
+					<option value="03">03</option> 	
+					<option value="04">04</option> 
+					<option value="05">05</option> 					
+					<option value="06">06</option> 	
+					<option value="07">07</option> 
+					<option value="08">08</option> 					
+					<option value="09">09</option> 	
+					<option value="10">10</option> 
+					<option value="11">11</option> 					
+					<option value="12">12</option> 	
+				</select>			
+			</div>
+			<div class="create-game-date-space">
+				<span style="margin-left: 3px;">
+					月
+				</span>	
+			</div>
+			<div class="create-game-date" style="float: left; width: 40px;">
+				<select id="game-start-day" name=""> 
+					<option value="--">--</option> 					
+					<option value="01">01</option> 
+					<option value="02">02</option> 					
+					<option value="03">03</option> 	
+					<option value="04">04</option> 
+					<option value="05">05</option> 					
+					<option value="06">06</option> 	
+					<option value="07">07</option> 
+					<option value="08">08</option> 					
+					<option value="09">09</option> 	
+					<option value="10">10</option> 
+					<option value="11">11</option> 					
+					<option value="12">12</option> 
+					<option value="13">13</option> 	
+					<option value="14">14</option> 
+					<option value="15">15</option> 					
+					<option value="16">16</option> 	
+					<option value="17">17</option> 
+					<option value="18">18</option> 					
+					<option value="19">19</option> 
+					<option value="20">20</option> 
+					<option value="21">21</option> 					
+					<option value="22">22</option> 
+					<option value="23">23</option> 	
+					<option value="24">24</option> 
+					<option value="25">25</option> 					
+					<option value="26">26</option> 	
+					<option value="27">27</option> 
+					<option value="28">28</option> 					
+					<option value="29">29</option> 	
+					<option value="30">30</option> 
+					<option value="31">31</option> 						
+				</select>
+			</div>
+			<div class="create-game-date-space">
+				日
+			</div>
+			<div class="create-game-date-space">
+			</div>			
+			<div class="create-game-date" style="float: left; width: 40px;">	
+				<select id="game-start-hour" name=""> 
+					<option value="--">--</option> 					
+					<option value="01">01</option> 
+					<option value="02">02</option> 					
+					<option value="03">03</option> 	
+					<option value="04">04</option> 
+					<option value="05">05</option> 					
+					<option value="06">06</option> 	
+					<option value="07">07</option> 
+					<option value="08">08</option> 					
+					<option value="09">09</option> 	
+					<option value="10">10</option> 
+					<option value="11">11</option> 					
+					<option value="12">12</option>					
+				</select>
+			</div>	
+			<div class="create-game-date-space">
+				<span style="margin-left: 3px;">
+					时
+				</span>
+			</div>			
+			<div class="create-game-date" style="float: left; width: 40px;">
+				<select id="game-start-minute" name=""> 
+					<option value="--">--</option> 					
+					<option value="01">01</option> 
+					<option value="02">02</option> 					
+					<option value="03">03</option> 	
+					<option value="04">04</option> 
+					<option value="05">05</option> 					
+					<option value="06">06</option> 	
+					<option value="07">07</option> 
+					<option value="08">08</option> 					
+					<option value="09">09</option> 	
+					<option value="10">10</option> 
+					<option value="11">11</option> 					
+					<option value="12">12</option> 
+					<option value="13">13</option> 	
+					<option value="14">14</option> 
+					<option value="15">15</option> 					
+					<option value="16">16</option> 	
+					<option value="17">17</option> 
+					<option value="18">18</option> 					
+					<option value="19">19</option> 
+					<option value="20">20</option> 
+					<option value="21">21</option> 					
+					<option value="22">22</option> 
+					<option value="23">23</option> 	
+					<option value="24">24</option> 
+					<option value="25">25</option> 					
+					<option value="26">26</option> 	
+					<option value="27">27</option> 
+					<option value="28">28</option> 					
+					<option value="29">29</option> 	
+					<option value="30">30</option> 
+					<option value="31">31</option> 	
+					<option value="32">32</option> 
+					<option value="33">33</option> 	
+					<option value="34">34</option> 
+					<option value="35">35</option> 					
+					<option value="36">36</option> 	
+					<option value="37">37</option> 
+					<option value="38">38</option> 					
+					<option value="39">39</option> 
+					<option value="40">40</option> 
+					<option value="41">41</option> 	
+					<option value="42">42</option> 
+					<option value="43">43</option> 	
+					<option value="44">44</option> 
+					<option value="45">45</option> 					
+					<option value="46">46</option> 	
+					<option value="47">47</option> 
+					<option value="48">48</option> 					
+					<option value="49">49</option> 	
+					<option value="51">51</option> 	
+					<option value="52">52</option> 
+					<option value="53">53</option> 	
+					<option value="54">54</option> 
+					<option value="55">55</option> 					
+					<option value="56">56</option> 	
+					<option value="57">57</option> 
+					<option value="58">58</option> 					
+					<option value="59">59</option> 						
+				</select>
+			</div>
+			<div class="create-game-date-space">
+				<span style="margin-left: 3px;">
+					分
+				</span>
+			</div>				
+		</div>		
+		<div class="create-game-row">
+			<div class="create-game-span">
+				<span class="create-game-span-style">结束时间：</span>
+			</div>
+			<div class="create-game-date" style="float: left; margin-left: 8px; width: 55px;">
+				<select id="game-end-year" name=""> 
+					<option value="----">----</option> 					
+					<option value="2017">2017</option> 
+					<option value="2018">2018</option> 					
+					<option value="2019">2019</option> 
+				</select>
+			</div>
+			<div class="create-game-date-space">
+				<span style="margin-left: 3px;">
+					年
+				</span>
+			</div>
+			<div class="create-game-date" style="float: left; width: 40px;">
+				<select id="game-end-month" name=""> 
+					<option value="--">--</option> 					
+					<option value="01">01</option> 
+					<option value="02">02</option> 					
+					<option value="03">03</option> 	
+					<option value="04">04</option> 
+					<option value="05">05</option> 					
+					<option value="06">06</option> 	
+					<option value="07">07</option> 
+					<option value="08">08</option> 					
+					<option value="09">09</option> 	
+					<option value="10">10</option> 
+					<option value="11">11</option> 					
+					<option value="12">12</option> 	
+				</select>
+			</div>
+			<div class="create-game-date-space">
+				<span style="margin-left: 3px;">
+					月
+				</span>	
+			</div>
+			<div class="create-game-date" style="float: left; width: 40px;">
+				<select id="game-end-day" name=""> 
+					<option value="--">--</option> 					
+					<option value="01">01</option> 
+					<option value="02">02</option> 					
+					<option value="03">03</option> 	
+					<option value="04">04</option> 
+					<option value="05">05</option> 					
+					<option value="06">06</option> 	
+					<option value="07">07</option> 
+					<option value="08">08</option> 					
+					<option value="09">09</option> 	
+					<option value="10">10</option> 
+					<option value="11">11</option> 					
+					<option value="12">12</option> 
+					<option value="13">13</option> 	
+					<option value="14">14</option> 
+					<option value="15">15</option> 					
+					<option value="16">16</option> 	
+					<option value="17">17</option> 
+					<option value="18">18</option> 					
+					<option value="19">19</option> 
+					<option value="20">20</option> 
+					<option value="21">21</option> 					
+					<option value="22">22</option> 
+					<option value="23">23</option> 	
+					<option value="24">24</option> 
+					<option value="25">25</option> 					
+					<option value="26">26</option> 	
+					<option value="27">27</option> 
+					<option value="28">28</option> 					
+					<option value="29">29</option> 	
+					<option value="30">30</option> 
+					<option value="31">31</option> 						
+				</select>
+			</div>
+			<div class="create-game-date-space">
+				日
+			</div>	
+			<div class="create-game-date-space">
+				
+			</div>				
+			<div class="create-game-date" style="float: left; width: 40px;">
+				<select id="game-end-hour" name=""> 
+					<option value="--">--</option> 					
+					<option value="01">01</option> 
+					<option value="02">02</option> 					
+					<option value="03">03</option> 	
+					<option value="04">04</option> 
+					<option value="05">05</option> 					
+					<option value="06">06</option> 	
+					<option value="07">07</option> 
+					<option value="08">08</option> 					
+					<option value="09">09</option> 	
+					<option value="10">10</option> 
+					<option value="11">11</option> 					
+					<option value="12">12</option>					
+				</select>
+			</div>	
+			<div class="create-game-date-space">
+				<span style="margin-left: 3px;">
+					时
+				</span>
+			</div>			
+			<div class="create-game-date" style="float: left; width: 40px;">
+				<select id="game-end-minute" name=""> 
+					<option value="--">--</option> 					
+					<option value="01">01</option> 
+					<option value="02">02</option> 					
+					<option value="03">03</option> 	
+					<option value="04">04</option> 
+					<option value="05">05</option> 					
+					<option value="06">06</option> 	
+					<option value="07">07</option> 
+					<option value="08">08</option> 					
+					<option value="09">09</option> 	
+					<option value="10">10</option> 
+					<option value="11">11</option> 					
+					<option value="12">12</option> 
+					<option value="13">13</option> 	
+					<option value="14">14</option> 
+					<option value="15">15</option> 					
+					<option value="16">16</option> 	
+					<option value="17">17</option> 
+					<option value="18">18</option> 					
+					<option value="19">19</option> 
+					<option value="20">20</option> 
+					<option value="21">21</option> 					
+					<option value="22">22</option> 
+					<option value="23">23</option> 	
+					<option value="24">24</option> 
+					<option value="25">25</option> 					
+					<option value="26">26</option> 	
+					<option value="27">27</option> 
+					<option value="28">28</option> 					
+					<option value="29">29</option> 	
+					<option value="30">30</option> 
+					<option value="31">31</option> 	
+					<option value="32">32</option> 
+					<option value="33">33</option> 	
+					<option value="34">34</option> 
+					<option value="35">35</option> 					
+					<option value="36">36</option> 	
+					<option value="37">37</option> 
+					<option value="38">38</option> 					
+					<option value="39">39</option> 
+					<option value="40">40</option> 
+					<option value="41">41</option> 	
+					<option value="42">42</option> 
+					<option value="43">43</option> 	
+					<option value="44">44</option> 
+					<option value="45">45</option> 					
+					<option value="46">46</option> 	
+					<option value="47">47</option> 
+					<option value="48">48</option> 					
+					<option value="49">49</option> 	
+					<option value="51">51</option> 	
+					<option value="52">52</option> 
+					<option value="53">53</option> 	
+					<option value="54">54</option> 
+					<option value="55">55</option> 					
+					<option value="56">56</option> 	
+					<option value="57">57</option> 
+					<option value="58">58</option> 					
+					<option value="59">59</option> 						
+				</select>
+			</div>
+			<div class="create-game-date-space">
+				<span style="margin-left: 3px;">
+					分
+				</span>
+			</div>				
+		</div>
+		<div class="create-game-row">
+			<div class="create-game-span">
+				<span class="create-game-span-style">报名开始时间：</span>
+			</div>
+			
+			<div class="create-game-date" style="float: left; margin-left: 8px; width: 55px;">
+				<select id="game-enroll-start-year" name=""> 
+					<option value="----">----</option> 					
+					<option value="2017">2017</option> 
+					<option value="2018">2018</option> 					
+					<option value="2019">2019</option> 
+				</select>
+			</div>
+			<div class="create-game-date-space">
+				<span style="margin-left: 3px;">
+					年
+				</span>
+			</div>
+			<div class="game-game-date" style="float: left; width: 40px;">
+				<select id="game-enroll-start-month" name=""> 
+					<option value="--">--</option> 					
+					<option value="01">01</option> 
+					<option value="02">02</option> 					
+					<option value="03">03</option> 	
+					<option value="04">04</option> 
+					<option value="05">05</option> 					
+					<option value="06">06</option> 	
+					<option value="07">07</option> 
+					<option value="08">08</option> 					
+					<option value="09">09</option> 	
+					<option value="10">10</option> 
+					<option value="11">11</option> 					
+					<option value="12">12</option> 	
+				</select>			
+			</div>
+			<div class="create-game-date-space">
+				<span style="margin-left: 3px;">
+					月
+				</span>	
+			</div>
+			<div class="create-game-date" style="float: left; width: 40px;">
+				<select id="game-enroll-start-day" name=""> 
+					<option value="--">--</option> 					
+					<option value="01">01</option> 
+					<option value="02">02</option> 					
+					<option value="03">03</option> 	
+					<option value="04">04</option> 
+					<option value="05">05</option> 					
+					<option value="06">06</option> 	
+					<option value="07">07</option> 
+					<option value="08">08</option> 					
+					<option value="09">09</option> 	
+					<option value="10">10</option> 
+					<option value="11">11</option> 					
+					<option value="12">12</option> 
+					<option value="13">13</option> 	
+					<option value="14">14</option> 
+					<option value="15">15</option> 					
+					<option value="16">16</option> 	
+					<option value="17">17</option> 
+					<option value="18">18</option> 					
+					<option value="19">19</option> 
+					<option value="20">20</option> 
+					<option value="21">21</option> 					
+					<option value="22">22</option> 
+					<option value="23">23</option> 	
+					<option value="24">24</option> 
+					<option value="25">25</option> 					
+					<option value="26">26</option> 	
+					<option value="27">27</option> 
+					<option value="28">28</option> 					
+					<option value="29">29</option> 	
+					<option value="30">30</option> 
+					<option value="31">31</option> 						
+				</select>
+			</div>
+			<div class="create-game-date-space">
+				日
+			</div>
+			<div class="create-game-date-space">
+			</div>			
+			<div class="create-game-date" style="float: left; width: 40px;">	
+				<select id="game-enroll-start-hour" name=""> 
+					<option value="--">--</option> 					
+					<option value="01">01</option> 
+					<option value="02">02</option> 					
+					<option value="03">03</option> 	
+					<option value="04">04</option> 
+					<option value="05">05</option> 					
+					<option value="06">06</option> 	
+					<option value="07">07</option> 
+					<option value="08">08</option> 					
+					<option value="09">09</option> 	
+					<option value="10">10</option> 
+					<option value="11">11</option> 					
+					<option value="12">12</option>					
+				</select>
+			</div>	
+			<div class="create-game-date-space">
+				<span style="margin-left: 3px;">
+					时
+				</span>
+			</div>			
+			<div class="create-game-date" style="float: left; width: 40px;">
+				<select id="game-enroll-start-minute" name=""> 
+					<option value="--">--</option> 					
+					<option value="01">01</option> 
+					<option value="02">02</option> 					
+					<option value="03">03</option> 	
+					<option value="04">04</option> 
+					<option value="05">05</option> 					
+					<option value="06">06</option> 	
+					<option value="07">07</option> 
+					<option value="08">08</option> 					
+					<option value="09">09</option> 	
+					<option value="10">10</option> 
+					<option value="11">11</option> 					
+					<option value="12">12</option> 
+					<option value="13">13</option> 	
+					<option value="14">14</option> 
+					<option value="15">15</option> 					
+					<option value="16">16</option> 	
+					<option value="17">17</option> 
+					<option value="18">18</option> 					
+					<option value="19">19</option> 
+					<option value="20">20</option> 
+					<option value="21">21</option> 					
+					<option value="22">22</option> 
+					<option value="23">23</option> 	
+					<option value="24">24</option> 
+					<option value="25">25</option> 					
+					<option value="26">26</option> 	
+					<option value="27">27</option> 
+					<option value="28">28</option> 					
+					<option value="29">29</option> 	
+					<option value="30">30</option> 
+					<option value="31">31</option> 	
+					<option value="32">32</option> 
+					<option value="33">33</option> 	
+					<option value="34">34</option> 
+					<option value="35">35</option> 					
+					<option value="36">36</option> 	
+					<option value="37">37</option> 
+					<option value="38">38</option> 					
+					<option value="39">39</option> 
+					<option value="40">40</option> 
+					<option value="41">41</option> 	
+					<option value="42">42</option> 
+					<option value="43">43</option> 	
+					<option value="44">44</option> 
+					<option value="45">45</option> 					
+					<option value="46">46</option> 	
+					<option value="47">47</option> 
+					<option value="48">48</option> 					
+					<option value="49">49</option> 	
+					<option value="51">51</option> 	
+					<option value="52">52</option> 
+					<option value="53">53</option> 	
+					<option value="54">54</option> 
+					<option value="55">55</option> 					
+					<option value="56">56</option> 	
+					<option value="57">57</option> 
+					<option value="58">58</option> 					
+					<option value="59">59</option> 						
+				</select>
+			</div>
+			<div class="create-game-date-space">
+				<span style="margin-left: 3px;">
+					分
+				</span>
+			</div>
+			
+		</div>		
+		<div class="create-game-row">
+			<div class="create-game-span">
+				<span class="create-game-span-style">报名结束时间：</span>
+			</div>
+			
+			<div class="create-game-date" style="float: left; margin-left: 8px; width: 55px;">
+				<select id="game-enroll-end-year" name=""> 
+					<option value="----">----</option> 					
+					<option value="2017">2017</option> 
+					<option value="2018">2018</option> 					
+					<option value="2019">2019</option> 
+				</select>
+			</div>
+			<div class="create-game-date-space">
+				<span style="margin-left: 3px;">
+					年
+				</span>
+			</div>
+			<div class="game-game-date" style="float: left; width: 40px;">
+				<select id="game-enroll-end-month" name=""> 
+					<option value="--">--</option> 					
+					<option value="01">01</option> 
+					<option value="02">02</option> 					
+					<option value="03">03</option> 	
+					<option value="04">04</option> 
+					<option value="05">05</option> 					
+					<option value="06">06</option> 	
+					<option value="07">07</option> 
+					<option value="08">08</option> 					
+					<option value="09">09</option> 	
+					<option value="10">10</option> 
+					<option value="11">11</option> 					
+					<option value="12">12</option> 	
+				</select>			
+			</div>
+			<div class="create-game-date-space">
+				<span style="margin-left: 3px;">
+					月
+				</span>	
+			</div>
+			<div class="create-game-date" style="float: left; width: 40px;">
+				<select id="game-enroll-end-day" name=""> 
+					<option value="--">--</option> 					
+					<option value="01">01</option> 
+					<option value="02">02</option> 					
+					<option value="03">03</option> 	
+					<option value="04">04</option> 
+					<option value="05">05</option> 					
+					<option value="06">06</option> 	
+					<option value="07">07</option> 
+					<option value="08">08</option> 					
+					<option value="09">09</option> 	
+					<option value="10">10</option> 
+					<option value="11">11</option> 					
+					<option value="12">12</option> 
+					<option value="13">13</option> 	
+					<option value="14">14</option> 
+					<option value="15">15</option> 					
+					<option value="16">16</option> 	
+					<option value="17">17</option> 
+					<option value="18">18</option> 					
+					<option value="19">19</option> 
+					<option value="20">20</option> 
+					<option value="21">21</option> 					
+					<option value="22">22</option> 
+					<option value="23">23</option> 	
+					<option value="24">24</option> 
+					<option value="25">25</option> 					
+					<option value="26">26</option> 	
+					<option value="27">27</option> 
+					<option value="28">28</option> 					
+					<option value="29">29</option> 	
+					<option value="30">30</option> 
+					<option value="31">31</option> 						
+				</select>
+			</div>
+			<div class="create-game-date-space">
+				日
+			</div>
+			<div class="create-game-date-space">
+			</div>			
+			<div class="create-game-date" style="float: left; width: 40px;">	
+				<select id="game-enroll-end-hour" name=""> 
+					<option value="--">--</option> 					
+					<option value="01">01</option> 
+					<option value="02">02</option> 					
+					<option value="03">03</option> 	
+					<option value="04">04</option> 
+					<option value="05">05</option> 					
+					<option value="06">06</option> 	
+					<option value="07">07</option> 
+					<option value="08">08</option> 					
+					<option value="09">09</option> 	
+					<option value="10">10</option> 
+					<option value="11">11</option> 					
+					<option value="12">12</option>					
+				</select>
+			</div>	
+			<div class="create-game-date-space">
+				<span style="margin-left: 3px;">
+					时
+				</span>
+			</div>			
+			<div class="create-game-date" style="float: left; width: 40px;">
+				<select id="game-enroll-end-minute" name=""> 
+					<option value="--">--</option> 					
+					<option value="01">01</option> 
+					<option value="02">02</option> 					
+					<option value="03">03</option> 	
+					<option value="04">04</option> 
+					<option value="05">05</option> 					
+					<option value="06">06</option> 	
+					<option value="07">07</option> 
+					<option value="08">08</option> 					
+					<option value="09">09</option> 	
+					<option value="10">10</option> 
+					<option value="11">11</option> 					
+					<option value="12">12</option> 
+					<option value="13">13</option> 	
+					<option value="14">14</option> 
+					<option value="15">15</option> 					
+					<option value="16">16</option> 	
+					<option value="17">17</option> 
+					<option value="18">18</option> 					
+					<option value="19">19</option> 
+					<option value="20">20</option> 
+					<option value="21">21</option> 					
+					<option value="22">22</option> 
+					<option value="23">23</option> 	
+					<option value="24">24</option> 
+					<option value="25">25</option> 					
+					<option value="26">26</option> 	
+					<option value="27">27</option> 
+					<option value="28">28</option> 					
+					<option value="29">29</option> 	
+					<option value="30">30</option> 
+					<option value="31">31</option> 	
+					<option value="32">32</option> 
+					<option value="33">33</option> 	
+					<option value="34">34</option> 
+					<option value="35">35</option> 					
+					<option value="36">36</option> 	
+					<option value="37">37</option> 
+					<option value="38">38</option> 					
+					<option value="39">39</option> 
+					<option value="40">40</option> 
+					<option value="41">41</option> 	
+					<option value="42">42</option> 
+					<option value="43">43</option> 	
+					<option value="44">44</option> 
+					<option value="45">45</option> 					
+					<option value="46">46</option> 	
+					<option value="47">47</option> 
+					<option value="48">48</option> 					
+					<option value="49">49</option> 	
+					<option value="51">51</option> 	
+					<option value="52">52</option> 
+					<option value="53">53</option> 	
+					<option value="54">54</option> 
+					<option value="55">55</option> 					
+					<option value="56">56</option> 	
+					<option value="57">57</option> 
+					<option value="58">58</option> 					
+					<option value="59">59</option> 						
+				</select>
+			</div>
+			<div class="create-game-date-space">
+				<span style="margin-left: 3px;">
+					分
+				</span>
+			</div>
+		</div>		
+		
+		<div class="create-game-row">
+			<div class="create-game-span">
+				<span class="create-game-span-style">地址：</span>
+			</div>
+			<div class="create-game-input" style="float: left;">
+				<input id="game-address" type="text"></input>
+			</div>
+		</div>
+		<div class="create-game-row">
+			<div class="create-game-span">
+				<span class="create-game-span-style">参赛总人数：</span>
+			</div>
+			<div class="create-game-input" style="float: left;">
+				<input id="all-num" type="text"></input>
+			</div>
+		</div>
+		<div class="create-game-row">
+			<div class="create-game-span">
+				<span class="create-game-span-style">报名人数：</span>
+			</div>
+			<div class="create-game-input" style="float: left;">
+				<input id="enroll-num" type="text"></input>
+			</div>
+		</div>
+		<div class="create-game-row">
+			<div class="create-game-span">
+				<span class="create-game-span-style">联系电话：</span>
+			</div>
+			<div class="create-game-input" style="float: left;">
+				<input id="contract-mobile" type="text"></input>
+			</div>
+		</div>
+		<div class="create-game-row">
+			<div class="create-game-span">
+				<span class="create-game-span-style">资金总人数：</span>
+			</div>
+			<div class="create-game-input" style="float: left;">
+				<input id="reward-num" type="text"></input>
+			</div>
+		</div>	
+		<div class="create-game-row">
+			<div class="create-game-span">
+				<span class="create-game-span-style">资金总金额：</span>
+			</div>
+			<div class="create-game-input" style="float: left;">
+				<input id="reward-amout" type="text"></input>
+			</div>
+		</div>			
+		<div class="create-game-row">
+			<div class="create-game-span">
+				<span class="create-game-span-style">联系姓名：</span>
+			</div>
+			<div class="create-game-input" style="float: left;">
+				<input id="contract-name" type="text"></input>
+			</div>
+		</div>
+	
+		<div class="create-game-row">
+			<div class="create-game-span">
+				<span class="create-game-span-style">奖项列表：</span>
+			</div>
+			<div class="create-game-input" style="float: left;">
+				<input id="award-list" type="text"></input>
+			</div>
+		</div>					
+		<div class="create-game-row">
+			<div class="create-game-span">
+				<span class="create-game-span-style">特等奖：</span>
+			</div>
+			<div class="create-game-input" style="float: left;">
+				<input id="max-award-amount" type="text"></input>
+			</div>
+		</div>				
+		
+		<div class="create-game-row">
+			<div class="create-game-span">
+				<span class="create-game-span-style">特等获奖人：</span>
+			</div>
+			<div class="create-game-input" style="float: left;">
+				<input id="award-name" type="text"></input>
+			</div>
+		</div>	
+
+		<div class="create-game-row">
+			<div class="create-game-span">
+				<span class="create-game-span-style">二维码个数：</span>
+			</div>
+			<div class="create-game-input" style="float: left;">
+				<input id="eqcoed-num" type="text"></input>
+			</div>
+		</div>			
+		
+		<div class="create-game-row">
+			<div class="create-game-span">
+				<span class="create-game-span-style">备注：</span>
+			</div>
+			<div class="create-game-input" style="float: left;">
+				<input id="note" type="text"></input>
+			</div>
+		</div>	
+
+		<div class="create-game-row" style="margin-top: 40px;">
+			<a id="save-game" class="game-button game-button-small" style="margin-top: 20px;margin-left: 20px;">保存</a>
+			<a id="delete-game" class="game-button game-button-small" style="margin-top: 20px;">删除</a>	
+			<a id="start-game" class="game-button game-button-small" style="margin-top: 20px;">开始</a>		
+			<a id="generate-qr-code" class="game-button game-button-small" style="margin-top: 20px;">二维码</a>					
+		</div>
+	</div>
+</body>
+<script type="text/javascript" src="./js/modify-game.js"></script>
+</html>

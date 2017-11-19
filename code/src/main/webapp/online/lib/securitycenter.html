@@ -1,0 +1,170 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>安全工具页签页面</title>
+<link href="../../css/style.css" rel="stylesheet" type="text/css" id="styles"/>
+<link href="../../css/form.css" rel="stylesheet" type="text/css" id="styles"/>
+<script src="../../js/ts.js"></script>
+<script src="../../js/tab.js"></script>
+</head>
+<body>
+<div class="page_box">
+
+
+  <!--温馨提示弹层-->
+  <div class="float_box1" id="float_box1">
+    <div class="line_box">
+      <div class="arrow_box"></div>
+      <div class="text_box"> 
+			<p>1、证书到期前3个月内提供证书更新功能，若操作员证书过期必须由管理员在“操作员管理”交易中进行更新；
+			</p>
+			<p>2、原登录密码连续输入错误6次后锁定，12小时后解锁。输入正确后清空错误累计。
+				解锁后继续输入错误1次，账户锁定。管理员将密码重置后可直接登录，强制修改密码；</p>
+			<p>3、密码规则为：6-16位半角数字和字母组合，字母区分大小写；</p>
+			<p>4、支持设置的退出时间为：5-20分钟，不能小于5分钟大于20分钟。系统默认的退出时间为15分钟。
+			</p> 
+		</div>
+    </div>
+  </div>
+  <!--功能介绍弹层-->
+  <div class="float_box2" id="float_box2">
+    <div class="line_box">
+      <div class="arrow_box"></div>
+      <div class="text_box">
+	    	<span class="tt">【 安全中心 】</span><br />
+        	<b>安全工具</b> - 支持查看USB-key证书的序号、有效期、状态等详细信息，并提供到期在线更新功能；还可根据您的使用习惯自行设置交易的首选安全认证方式；</br>
+        	<b>登录密码</b> - 支持修改网银登录名和登录密码，根据您的习惯自行设置使用用户名、网银账号、或手机号码登录网银；提供网银暂停功能，若您在某一段期间不需要或不经常使用网银，可申请暂停网银,暂停期间，可通过回答私密问题恢复网银；</br>
+        	<b>个人信息</b> - 您可使用个人资料修改功能更新您的个人资料信息；</br>
+        </div>
+    </div>
+  </div>
+  
+  
+  	<!-- 地址栏开始-->
+	<div class="add_box">
+		<div class="tt">企业中心 - 安全中心</div>
+    	<div class="link"><a href="#" onmouseover="opents1()" onmouseout="closets1()">温馨提示</a><a href="#" onmouseover="opents2()" onmouseout="closets2()">功能介绍</a></div>
+  	</div>
+  	<!-- 地址栏结束-->
+  
+	<!-- 标签标题开始-->  
+	<div class="main_TabTitle" style="width:75%">
+		<ul id="myTab0">
+          	<li class="active"   onClick="nTabs(this,0);">安全管理</li>
+          	<li class="normal" onClick="nTabs(this,1);">登录密码</li>
+		  	<li class="normal" onClick="nTabs(this,2);">个人信息</li>
+        </ul>
+  	</div>
+	<!-- 标签标题结束-->  
+
+
+
+<!-- 标签1开始-->
+<div id="myTab0_Content0">
+	     
+<div class="round_box w_100p">
+	
+      <div class="tt_box">
+        <div class="tt">对账明细</div>
+      </div>
+      <table class="table3"  align="center" >
+        <tr class="tt">
+          <!-- th 加粗，居中-->
+          <td class="cen dq_left">管理项</td>
+          <td class="cen">说明</td>
+          <td class="cen">操作</td> 
+        </tr>
+        <tr class="backrow">
+          <td class="cen dq_left">USBkey证书更新</td>
+          <td class="cen">可查看USBkey证书的序号、有效期、状态等详细信息，并提供到期在线更新功能。</td>
+          <td class="cen"><a href="#">设置</a></td> 
+        </tr> 
+      </table>
+	   
+    <div class="btn_box">
+     </div> 
+	  
+</div>
+ 
+</div>
+<!-- 标签1结束-->
+
+<!-- 标签2开始-->
+<div id="myTab0_Content1" class="none">
+
+    <div class="round_box w_100p">
+	
+      <div class="tt_box">
+        <div class="tt">登录密码</div>
+      </div>
+      <table class="table3"  align="center" >
+       
+        <tr class="backrow">
+          <td class="cen dq_left">登录密码</td>
+          <td class="cen">登录密码用于您登录我行企业网银，建议您定期修改。</td> 
+          <td class="cen"><a href="return:void(0);" onclick="window.location='BankInnerTransferConfirm.html';">修改</a></td>
+        </tr> 
+      </table>
+	  
+    <div class="btn_box">
+     </div> 
+	  
+</div>
+</div>
+<!-- 标签2结束--> 
+
+
+<!-- 标签3开始-->
+<div id="myTab0_Content2" class="none">
+
+    <div class="round_box w_100p">
+		
+	    	<div class="tt_box">
+		   		<div class="tt">个人信息</div>
+		 	</div>
+	    
+	    	<table class="table_2" align="left">
+	    		<td>
+			    	<img src="../../imgs/pic_operatorinfor.png" style="width:120px; height:120px;"/>
+ 				</td>
+			  	<td>
+			    	<table border="0" cellspacing="0" cellpadding="0">
+			    		<tr>
+					    	<td>姓　名：</td>
+					    	<td>李明</td>
+					  	</tr>
+					  	<tr>
+				   	 		<td>客户号：</td>
+					    	<td>4000012</td>
+					  	</tr>
+					  	<tr>
+					    	<td>手机号码：</td>
+					    	<td>1568758745</td>
+					  	</tr>
+					  	<tr>
+					    	<td>Email：</td>
+					    	<td>513240239@qq.com</td>
+					  	</tr>
+					  	<tr>
+					    	<td>联系电话：</td>
+					    	<td>8547874</td>
+					  	</tr>
+			    	</table>
+		  		</td>
+	    	</table>
+      
+	  
+</div>
+<div class="round_box w_100p">
+	    	<div class="btn_box">
+	      		 <!--onclick="window.location='BankInnerTransferConfirm.html';"-->
+	      		<input name="" type="button" value="提交" class="btn2" >
+	    	</div>
+	  	</div>
+</div>
+<!-- 标签3结束--> 
+
+
+</body>
+</html>

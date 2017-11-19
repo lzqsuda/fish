@@ -1,0 +1,319 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"ng-c",
+				"ng-controller	AngularJS"
+			],
+			[
+				"$routep",
+				"$routeProvider	AngularJS(DI)"
+			],
+			[
+				"ru",
+				"routes"
+			],
+			[
+				"fun",
+				"function"
+			],
+			[
+				"ng-cl",
+				"ng-click	AngularJS"
+			],
+			[
+				"co",
+				"controller	AngularJS"
+			],
+			[
+				"$sc",
+				"$scope	AngularJS"
+			],
+			[
+				"J",
+				"JAVA_HOME"
+			]
+		]
+	},
+	"buffers":
+	[
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 392.0,
+		"last_filter": "ins",
+		"selected_items":
+		[
+			[
+				"ins",
+				"Package Control: Install Package"
+			],
+			[
+				"inst",
+				"Package Control: Install Package"
+			],
+			[
+				"",
+				"Package Control: Install Package"
+			]
+		],
+		"width": 530.0
+	},
+	"console":
+	{
+		"height": 139.0,
+		"history":
+		[
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/Users/liuzhq/Desktop/mac安装nginx",
+		"/Users/liuzhq/Documents/010myapp/itaf/code/web/bower.json",
+		"/Users/liuzhq/Documents/010myapp/itaf/code/web/index.html",
+		"/Users/liuzhq/Documents/001csii/hercules/Plateform/平台补丁包/osgi版本系统升级加固注意问题",
+		"/Users/liuzhq/Documents/001csii/网商银行/00_workspace/code/app/web/home/src/main/resources/MERGE-INF/merge-smvc-scheme-default.xml",
+		"/Users/liuzhq/Documents/010myapp/itaf/code/web/app/core/locales-zh_CN.js",
+		"/Users/liuzhq/Documents/010myapp/itaf/code/web/app/demo/data.service.js",
+		"/Users/liuzhq/Documents/010myapp/itaf/code/web/app/demo/view1.controller.js",
+		"/Users/liuzhq/Documents/010myapp/itaf/code/web/app/demo/exception.js",
+		"/Users/liuzhq/Documents/010myapp/itaf/code/web/test/data/demo.json",
+		"/Users/liuzhq/Documents/010myapp/itaf/code/web/app/demo/view1.html",
+		"/Users/liuzhq/Documents/010myapp/itaf/code/web/app/demo/config.route.js",
+		"/Users/liuzhq/Documents/010myapp/itaf/code/web/app/service/dataservice.js",
+		"/Users/liuzhq/Documents/010myapp/itaf/code/web/app/demo/view2.html",
+		"/Users/liuzhq/Documents/010myapp/itaf/code/web/app/demo/hello.html",
+		"/Users/liuzhq/Documents/010myapp/itaf/code/web/app/demo/view2.controller.js",
+		"/Users/liuzhq/Documents/010myapp/itaf/code/web/WEB-INF/web.xml",
+		"/Users/liuzhq/Documents/010myapp/itaf/code/web/app/demo/hello.controller.js",
+		"/Users/liuzhq/Documents/010myapp/itaf/code/web/app/demo/demo.module.js",
+		"/Users/liuzhq/Documents/010myapp/itaf/code/web/http.js",
+		"/Users/liuzhq/Documents/010myapp/itaf/code/web/app/index.html",
+		"/Users/liuzhq/Documents/010myapp/itaf/code/web/app/demo/my.directive.js",
+		"/Users/liuzhq/Documents/010myapp/itaf/code/web/app/app.module.js",
+		"/Users/liuzhq/Documents/010myapp/itaf/code/web/app/demo/MyDirective.js",
+		"/Users/liuzhq/Documents/010myapp/itaf/code/web/app/demo/hello-controller.js",
+		"/Users/liuzhq/Downloads/ng-demos-master/modular/src/client/app/core/dataservice.js",
+		"/Users/liuzhq/Downloads/ng-demos-master/modular/src/client/app/app.module.js",
+		"/Users/liuzhq/Downloads/ng-demos-master/modular/src/client/content/styles.css",
+		"/Users/liuzhq/Documents/010myapp/itaf/code/web/build/js/controller/HelloController.js",
+		"/Users/liuzhq/Documents/010myapp/itaf/code/web/build/view/hello_view.html",
+		"/Users/liuzhq/Downloads/angular-seed-master/bower.json",
+		"/Users/liuzhq/Documents/010myapp/itaf/code/web/mine.js",
+		"/Users/liuzhq/Documents/010myapp/itaf/code/web/build/index.html",
+		"/Users/liuzhq/Downloads/ng-demos-master/cc-bmean/src/client/app/core/bootstrap.dialog.js",
+		"/Users/liuzhq/Documents/010myapp/itaf/code/web/build/http.js",
+		"/Users/liuzhq/Documents/010myapp/itaf/code/web/build/http",
+		"/Users/liuzhq/Downloads/angular-seed-master/app/index-async.html",
+		"/Users/liuzhq/Documents/010myapp/itaf/code/web/build/lib/require.min.2.1.20.js",
+		"/Users/liuzhq/Documents/010myapp/itaf/code/web/build/lib/json2.js",
+		"/Users/liuzhq/Documents/010myapp/itaf/code/web/build/js/directive/MyDirective.js",
+		"/Users/liuzhq/Documents/010myapp/itaf/code/web/build/view/helloworld.html",
+		"/Users/liuzhq/Documents/010myapp/itaf/code/web/build/view/untitled",
+		"/Users/liuzhq/Documents/010myapp/itaf/code/web/package.json",
+		"/Users/liuzhq/Documents/010myapp/itaf/code/web/helloworld.html",
+		"/Users/liuzhq/Documents/010myapp/itaf/code/web/helloapp.js",
+		"/Users/liuzhq/Documents/010myapp/itaf/code/web/hello.html",
+		"/Users/liuzhq/Documents/010myapp/itaf/code/web/build/404.html",
+		"/Users/liuzhq/Documents/010myapp/itaf/code/web/gruntfile.js",
+		"/Users/liuzhq/Documents/010myapp/itaf/code/web/human.txt",
+		"/Users/liuzhq/Documents/010myapp/itaf/code/web/README.md",
+		"/Users/liuzhq/Documents/010myapp/itaf/code/web/untitled",
+		"/Users/liuzhq/Documents/010myapp/itaf/code/web/app.js",
+		"/Users/liuzhq/Documents/010myapp/itaf/code/java/pom.xml",
+		"/Users/liuzhq/Documents/010myapp/itaf/code/java/createproject.sh",
+		"/Users/liuzhq/Documents/010myapp/itaf/doc/软件工程库/01 系统需求/概念模型(Domain Model)/ECIF_Util/src/com/ibm/ecifutil/frmk/FreeMarkerGenerator.java",
+		"/Users/liuzhq/Documents/010myapp/itaf/doc/软件工程库/01 系统需求/概念模型(Domain Model)/ECIF_Util/src/com/ibm/ecifutil/metadata/CIISModel.java",
+		"/Users/liuzhq/Documents/010myapp/itaf/doc/软件工程库/01 系统需求/概念模型(Domain Model)/ECIF_Util/src/com/ibm/ecifutil/metadata/CIISAttribute.java",
+		"/Users/liuzhq/Documents/010myapp/itaf/code/java/runjetty.sh",
+		"/Users/liuzhq/Documents/010myapp/itaf/code/java/itaf-common/src/main/java/itaf/common/dao/ITAFDao.java",
+		"/Users/liuzhq/Documents/002j2ee/maven/conf/settings.xml",
+		"/Users/liuzhq/Desktop/kunsanpoc/PEDynamicMServer/分布式系统架构方面",
+		"/Users/liuzhq/Desktop/kunsanpoc/PEDynamicMServer/startMServer.sh",
+		"/Users/liuzhq/Desktop/vx2.0-component/static/login.js",
+		"/Users/liuzhq/Desktop/vx2.0-component/static/main.html",
+		"/Users/liuzhq/Desktop/vx2.0-component/static/login.html",
+		"/Users/liuzhq/Desktop/vx2.0-component/static/lib/app.js",
+		"/Users/liuzhq/Desktop/vx2.0-component/static/index.html",
+		"/Users/liuzhq/Documents/001csii/hercules/Doc/平台介绍/系统安全列表",
+		"/Users/liuzhq/Desktop/HttpClientTransport.java",
+		"/Users/liuzhq/Desktop/邮储JAVA基础开发平台POC/邮储邮箱地址.txt",
+		"/Users/liuzhq/Desktop/邮储POC平台笔记",
+		"/Users/liuzhq/Documents/001csii/project/stresstest/csii_dv_workspace_xx_poc_tencent/doc/creteibs.sql",
+		"/Users/liuzhq/Documents/001csii/project/bos-ib/pom.xml",
+		"/Users/liuzhq/Documents/010myapp/itrueshop/src/main/java/com/itrueshop/util/SerialNumberUtil.java",
+		"/Users/liuzhq/Documents/001csii/hercules/Plateform/com.csii.pe.channel.http.session/src/com/csii/pe/channel/http/session/SessionDelegate.java",
+		"/Users/liuzhq/Desktop/system_undefined_transaction_WEB-INF.txt",
+		"/Users/liuzhq/Documents/008demo/dubbo/dubbo-demo/dubbo-demo-csii/pom.xml",
+		"/Users/liuzhq/Desktop/pe_json_parse_error.txt",
+		"/Users/liuzhq/Desktop/15365728742",
+		"/Users/liuzhq/.bash_profile",
+		"/Users/liuzhq/Desktop/sec.doc",
+		"/System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Home/lib/security/java.security",
+		"/Users/liuzhq/Documents/001csii/天津银行/20150707/apache/config/httpd.conf",
+		"/Users/liuzhq/Documents/008demo/dubbo/dubbo/pom.xml",
+		"/Users/liuzhq/Documents/008demo/dubbo/pom.xml",
+		"/Users/liuzhq/Desktop/itrueshop_table.sql",
+		"/Users/liuzhq/Desktop/itrueshop_index.sql",
+		"/Users/liuzhq/Desktop/itrueshop_fk.sql",
+		"/Users/liuzhq/Desktop/itrueshop_data",
+		"/Users/liuzhq/Desktop/itrueshop_data.sql",
+		"/Users/liuzhq/Documents/002j2ee/zookeeper-3.4.6/conf/zoo.cfg",
+		"/Users/liuzhq/Downloads/02baa634-216d-3040-81fe-87bca4db677b/src/org/h2/tools/RunScript.java",
+		"/Users/liuzhq/Desktop/平台没有的功能点.txt",
+		"/Users/liuzhq/Desktop/nginx_pid.sh",
+		"/Users/liuzhq/Documents/009green/Tomcat/bin/cat <<EOF > :etc:init.d:tomcat"
+	],
+	"find":
+	{
+		"height": 25.0
+	},
+	"find_in_files":
+	{
+		"height": 93.0,
+		"where_history":
+		[
+			"/Volumes/Seagate Expansion Drive",
+			"/Users/liuzhq/Desktop/vx2.0-component/static"
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"数据分析",
+			"suning",
+			"苏宁",
+			"mvc-uisvr-plugin",
+			"mvc-json-plugin",
+			"$routeProvider",
+			"poi",
+			"ngTouch",
+			"loginCtrl",
+			"net.engining.pg"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": false
+	},
+	"groups":
+	[
+		{
+			"sheets":
+			[
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 25.0
+	},
+	"input":
+	{
+		"height": 31.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"output.unsaved_changes":
+	{
+		"height": 100.0
+	},
+	"pinned_build_system": "",
+	"project": "itaf.sublime-project",
+	"replace":
+	{
+		"height": 46.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 392.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 629.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 358.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}
