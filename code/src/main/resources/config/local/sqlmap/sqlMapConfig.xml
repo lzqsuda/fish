@@ -9,9 +9,9 @@
     <settings useStatementNamespaces="true"/>
 
 	<!-- Common Module -->
-	<sqlMap resource="sqlmap/Competition.xml"/>
-	<sqlMap resource="sqlmap/User.xml"/>
-	<sqlMap resource="sqlmap/Enroll.xml"/>
-	<sqlMap resource="sqlmap/Member.xml"/>
-	<sqlMap resource="sqlmap/Reward.xml"/>
+	<sqlMap resource="config/local/sqlmap/Competition.xml"/>
+	<sqlMap resource="config/local/sqlmap/User.xml"/>
+	<sqlMap resource="config/local/sqlmap/Enroll.xml"/>
+	<sqlMap resource="config/local/sqlmap/Member.xml"/>
+	<sqlMap resource="config/local/sqlmap/Reward.xml"/>
 </sqlMapConfig>

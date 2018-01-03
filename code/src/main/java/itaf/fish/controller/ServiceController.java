@@ -56,7 +56,7 @@ public class ServiceController extends BaseController {
     String srewardMembernoList = context.getString("srewardMembernoList");// 特等奖人员微信号列表，以逗号分隔
     String srewardAmountList = context.getString("srewardAmountList");// 特等奖金额列表，以逗号分隔
     String contactName = context.getString("contactName");// 比赛联系人姓名
-    Integer eqcoedNum = context.getInteger("eqcoedNum");// 二维码个数
+    Integer eqcoedNum = context.getInteger("eqcoedNum");// 二维码个数,标鱼数
     String note = context.getString("note");// 比赛联系人姓名
 
     Competition comp = new Competition();
@@ -87,7 +87,6 @@ public class ServiceController extends BaseController {
   /**
    * 查询比赛列表
    */
- // @Trace
   @SuppressWarnings("unchecked")
   @RequestMapping(value = "/getCompetitionList.json")
   public void getCompetitionList() {

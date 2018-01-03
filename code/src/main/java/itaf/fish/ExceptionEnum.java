@@ -28,7 +28,8 @@ public enum ExceptionEnum implements IExceptionEnum{
     SMSCODE_VERIFY_FAIL("102", ErrorLevels.ERROR, ErrorTypes.BIZ, "验证码验证失败"),
     OPEARTOR_INEXISTENCE("103", ErrorLevels.ERROR, ErrorTypes.BIZ, "用户不存在"),
     OPEARTOR_PASSWRORD_ERROR("104", ErrorLevels.ERROR, ErrorTypes.BIZ, "密码错误"),
-    
+    ENROLL_DUP_ERROR("105", ErrorLevels.ERROR, ErrorTypes.BIZ, "该用户已经报名！"),
+    REWARD_DUP_ERROR("106", ErrorLevels.ERROR, ErrorTypes.BIZ, "改用户已经抽奖！"),
     
     /**Core*/
     //BEAN2MAP_FAIL("200", ErrorLevels.ERROR, ErrorTypes.BIZ, "对象转换Mapp 错误"),
